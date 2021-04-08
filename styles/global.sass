@@ -1,17 +1,4 @@
-@import "compass"
-@import "h5bp"
-@import "animate"
-
-// HTML5 Boilerplate Styles
-@include h5bp-normalize
-@include h5bp-base-styles
-
-// Susy Grid Systems - choose one to customize
-//@import "grid/fixed"
-@import "grid/magic"
-
-// Font Awesome icons
-@import "font-awesome"
+@import '../node_modules/modern-normalize/modern-normalize.css'
 
 @mixin gradient-top-lighten($color:#666, $lighten:10%)
   background-color: $color
@@ -41,15 +28,15 @@ $default-animation-direction: normal     !default
 //実行前や実行後のスタイル指定(none | forwards | backwards | both)
 $default-animation-fill-mode: both       !default
 
-@mixin animation (  $name     :false,  $duration :$default-animation-duration,  $delay    :$default-animation-delay,  $count    :$default-animation-count,  $function :$default-animation-timing-function,  $direction:$default-animation-direction,  $fillMode :$default-animation-fill-mode)
+@mixin animation($name :false, $duration :$default-animation-duration, $delay :$default-animation-delay, $count   :$default-animation-count, $function :$default-animation-timing-function, $direction:$default-animation-direction,  $fillMode :$default-animation-fill-mode)
   @if $name 
-    @include experimental(animation-name,            $name)
-  @include experimental(animation-duration,        $duration)
-  @include experimental(animation-delay,           $delay)
-  @include experimental(animation-iteration-count, $count)
-  @include experimental(animation-timing-function, $function)
-  @include experimental(animation-direction,       $direction) // 反復の有無(normal | alternate) 
-  @include experimental(animation-fill-mode,       $fillMode) //実行前や実行後のスタイル指定(none | forwards | backwards | both)
+    animation-name: $name
+  animation-duration:        $duration
+  animation-delay:           $delay
+  animation-iteration-count: $count
+  animation-timing-function: $function
+  animation-direction:       $direction // 反復の有無(normal | alternate) 
+  animation-fill-mode:       $fillMode //実行前や実行後のスタイル指定(none | forwards | backwards | both)
 
 $bgcolor: #000000
 $fgcolor: #ccc
@@ -113,7 +100,7 @@ footer
   img
     max-width: 100%
     height: auto
-  @include container
+  //@include container
 
 $block-interval: 32px
 
@@ -144,12 +131,12 @@ $block-interval: 32px
   section#links
     color: #eee
     background-color: #C63B70
-    background: url(../images/back-blur-image.jpg) repeat center center
+    background: url(../public/static/back-blur-image.jpg) repeat center center
     //@include gradient-top-lighten(#C63B70, 7%)
     i
       font-size: 72px
       display: block
-    @include clearfix
+    //@include clearfix
     ul
       margin: 0
       padding: 0
@@ -186,14 +173,8 @@ $block-interval: 32px
   height: 70%
   background-color: clear
   pointer-events: none
-  @include background-image(linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0)))
-  @include rotate(-12deg)
-  @include transform-origin(0,0,0)
-// H5BP helper classes & mixins.
-// @include h5bp-helpers
-
-// Print styles.
-@include h5bp-media
+  background: linear-gradient(-12deg, rgba(255,255,255,0.25), rgba(255,255,255,0))
+  //@include transform-origin(0,0,0)
 
 @keyframes rubberBand
   from
@@ -245,7 +226,7 @@ html, body.one-page
   padding: 0 0
   position: relative
   background-color: rgba(51,51,51,0)
-  +background-size(cover)
+  background-size: cover
   box-sizing: border-box
   -webkit-font-smoothing: antialiased
   h1
@@ -309,7 +290,7 @@ $cfFadingTime: 1
 $cfNumber: 5
 $cfTotalTime: $cfPresenTime * $cfNumber
 
-+keyframes(cfFadeInOut)
+@keyframes cfFadeInOut
   0%
     opacity: 0
   #{ ($cfFadingTime / $cfTotalTime) * 100 }%
@@ -327,20 +308,20 @@ $cfTotalTime: $cfPresenTime * $cfNumber
   left: 0
   width: 100%
   height: 100%
-  +animation-name(cfFadeInOut)
-  +animation-timing-function(linear)
-  +animation-iteration-count(infinite)
-  +animation-duration(#{$cfTotalTime}s)
-  +animation-fill-mode(forwards)
-  /* +animation-direction(alternate)
-  +background-size(cover)
+  animation-name: cfFadeInOut
+  animation-timing-function: linear
+  animation-iteration-count: infinite
+  animation-duration: #{$cfTotalTime}s
+  animation-fill-mode: forwards
+  //* +animation-direction(alternate)
+  background-size: cover
   box-sizing: border-box
   background-color: #f00
 
 @for $i from 1 through $cfNumber
   #crossFadingGallery .image:nth-of-type(#{$i})
     opacity: 0
-    background: url(../images/30image#{$i}.jpg) no-repeat center center fixed
-    +background-size(cover)
-    +animation-delay(#{0.3 + $cfPresenTime * ($i - 1)}s)
+    background: url(../public/static/30image#{$i}.jpg) no-repeat center center fixed
+    background-size: cover
+    animation-delay: #{0.3 + $cfPresenTime * ($i - 1)}s
 
