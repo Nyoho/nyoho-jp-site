@@ -1,0 +1,346 @@
+@import "compass"
+@import "h5bp"
+@import "animate"
+
+// HTML5 Boilerplate Styles
+@include h5bp-normalize
+@include h5bp-base-styles
+
+// Susy Grid Systems - choose one to customize
+//@import "grid/fixed"
+@import "grid/magic"
+
+// Font Awesome icons
+@import "font-awesome"
+
+@mixin gradient-top-lighten($color:#666, $lighten:10%)
+  background-color: $color
+  @include filter-gradient(lighten($color, $lighten), $color, vertical)
+  @include background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%))
+
+@mixin gradient-top-darken($color:#666, $darken:10%)
+  background-color: $color
+  @include filter-gradient(darken($color, $darken), $color, vertical)
+  @include background-image(linear-gradient(darken($color,  $darken) 0%, $color 100%))
+
+//再生時間
+$default-animation-duration       : 0.5s !default
+
+//実行までの待ち時間
+$default-animation-delay          : 0    !default
+
+//実行回数(number | infinite)
+$default-animation-iteration-count: 1    !default
+
+//タイミング(ease | liner | ease-in | ease-out | ease-in-out | cubic-bezier)
+$default-animation-timing-function: ease !default
+
+//反復の有無(normal | alternate)
+$default-animation-direction: normal     !default
+
+//実行前や実行後のスタイル指定(none | forwards | backwards | both)
+$default-animation-fill-mode: both       !default
+
+@mixin animation (  $name     :false,  $duration :$default-animation-duration,  $delay    :$default-animation-delay,  $count    :$default-animation-count,  $function :$default-animation-timing-function,  $direction:$default-animation-direction,  $fillMode :$default-animation-fill-mode)
+  @if $name 
+    @include experimental(animation-name,            $name)
+  @include experimental(animation-duration,        $duration)
+  @include experimental(animation-delay,           $delay)
+  @include experimental(animation-iteration-count, $count)
+  @include experimental(animation-timing-function, $function)
+  @include experimental(animation-direction,       $direction) // 反復の有無(normal | alternate) 
+  @include experimental(animation-fill-mode,       $fillMode) //実行前や実行後のスタイル指定(none | forwards | backwards | both)
+
+$bgcolor: #000000
+$fgcolor: #ccc
+
+/* @import url(http://fonts.googleapis.com/css?family=Lato)
+/* @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed)
+/* @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700)
+/* @import url(http://fonts.googleapis.com/css?family=Questrial)
+
+
+body
+  font-family: 'Questrial', 'Yanone Kaffeesatz','Roboto Condensed', Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif
+  background-color: $bgcolor
+  color: $fgcolor
+  line-height: 1.5
+  font-size: 16px
+a:link
+  color: mix($fgcolor, #44f)
+  text-decoration: none
+@-webkit-keyframes glow
+  0%
+    text-shadow: #ff2bff 0px 0px 0px
+  50%
+    text-shadow: #ff2bff 0px 0px 32px
+  100%
+    text-shadow: #8f2bff 0px 0px 0px
+a:hover
+  color: mix($fgcolor, #66f)
+  /* @include transition-duration(.3s)
+  /* @include transition-property(all)
+  @include animation(glow, 1.5s, 0s, infinite, linear, normal, both)
+h1
+  color: #999
+  text-transform: uppercase
+  line-height: 1em
+  font-size: 3em
+h2
+  font-family: 'HelveticaNeue-UltraLight', 'Yanone Kaffeesatz', sans-serif
+  font-weight: 100
+  line-height: 1.3em
+  font-size: 3em
+kbd
+  background-color: #f5f5f5
+  border: 1px solid #dedede
+  padding: 0px 3px 2px
+header
+  background-color: #202020
+  text-align: center
+  img
+    margin: 0 auto
+    max-width: 80%
+    height: auto
+    padding: 0 10%
+footer
+  padding: 1.4em 0
+  text-align: center
+  background-color: #000
+.container
+  margin: 0 auto
+  padding: 0
+  img
+    max-width: 100%
+    height: auto
+  @include container
+
+$block-interval: 32px
+
+#links
+  a:link
+    padding: 13px
+    text-decoration: none
+    font-weight: bold
+    color: #eee
+  a:focus, a:visited
+    color: white
+  a:hover
+    color: #fff
+  a:active
+    color: cyan !important
+      //lighten(#C63B70, 20%)
+
+#main-content
+  font-family: 'AvenirNextCondensed', 'Roboto', 'HelveticaNeue Condensed', sans-serif
+  section
+    margin: 0
+    padding: $block-interval 1em
+    h2
+      margin: 0 0 $block-interval 0
+  section#favorites
+    color: darken(#C63B70, 30%)
+    background-color: #eeeeee
+  section#links
+    color: #eee
+    background-color: #C63B70
+    background: url(../images/back-blur-image.jpg) repeat center center
+    //@include gradient-top-lighten(#C63B70, 7%)
+    i
+      font-size: 72px
+      display: block
+    @include clearfix
+    ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+      li
+        margin: 0
+        padding: 0
+        float: left
+        list-style: none
+        display: inline-block
+        text-align: center
+        /* border-left: 1px solid mix($bgcolor,#222)
+        /* border-right: 1px solid mix($bgcolor,#888)
+
+.link-container
+  margin: 0 auto
+  width: 100%
+  text-align: center
+  background-color: #128
+
+.gloss-container
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  clip: rect(0px,auto,auto,0px)
+  overflow: hidden
+  pointer-events: none
+.gloss
+  position: absolute
+  left: 43%
+  width: 300%
+  height: 70%
+  background-color: clear
+  pointer-events: none
+  @include background-image(linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0)))
+  @include rotate(-12deg)
+  @include transform-origin(0,0,0)
+// H5BP helper classes & mixins.
+// @include h5bp-helpers
+
+// Print styles.
+@include h5bp-media
+
+@keyframes rubberBand
+  from
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+  30%
+    -webkit-transform: scale3d(1.25, 0.75, 1)
+    transform: scale3d(1.25, 0.75, 1)
+
+  40%
+    -webkit-transform: scale3d(0.75, 1.25, 1)
+    transform: scale3d(0.75, 1.25, 1)
+
+  50%
+    -webkit-transform: scale3d(1.15, 0.85, 1)
+    transform: scale3d(1.15, 0.85, 1)
+
+  65%
+    -webkit-transform: scale3d(0.95, 1.05, 1)
+    transform: scale3d(0.95, 1.05, 1)
+
+  75%
+    -webkit-transform: scale3d(1.05, 0.95, 1)
+    transform: scale3d(1.05, 0.95, 1)
+
+  to
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+header > h1 > img
+  animation-name: rubberBand
+  animation-duration: 1s
+  animation-fill-mode: both
+
+html, body.one-page
+  height: 100%
+  color: #eee
+  line-height: 1.4
+  -webkit-font-smoothing: antialiased
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, Verdana, sans-serif
+
+#one-page
+  white-space: normal
+  display: table
+  height: 100%
+  min-height: 100%
+  width: 100%
+  padding: 0 0
+  position: relative
+  background-color: rgba(51,51,51,0)
+  +background-size(cover)
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  h1
+    font-family: 'HelveticaNeue-Light', Helvetica, Arial, Verdana, sans-serif
+    text-align: center
+  dl
+    font-size: smaller
+  dt
+    font-weight: bold
+  dd
+    margin-bottom: 0.5em
+  a
+    color: #efefef
+  a:hover
+    color: #fff
+    text-decoration: underline
+
+.thirty-head
+  font-family: 'HelveticaNeue-UltraLight', Helvetica, Arial, Verdana, sans-serif
+  font-size: 164px
+  text-align: center
+  img
+    width: 40%
+
+#one-page .container
+  letter-spacing: 0
+  position: relative
+  z-index: 3
+
+.vert-text
+  display: table-cell
+  vertical-align: middle
+  text-align: center
+
+.thirty-inner
+  margin: 0 auto
+  padding-top: 3em
+  font-size: 1.75em
+  position: relative
+  z-index: 10
+
+@media screen and (max-height: 1000px)
+  .thirty-inner
+    font-size: 1.5em
+@media screen and (max-height: 760px)
+  .thirty-inner
+    font-size: 1.125em
+@media screen and (max-height: 575px)
+  .thirty-inner
+    font-size: 0.85em
+
+@media screen and (max-width: 815px)
+  .thirty-inner
+    width: 90%
+    img
+      width: 60%
+
+
+$cfPresenTime: 9
+$cfFadingTime: 1
+$cfNumber: 5
+$cfTotalTime: $cfPresenTime * $cfNumber
+
++keyframes(cfFadeInOut)
+  0%
+    opacity: 0
+  #{ ($cfFadingTime / $cfTotalTime) * 100 }%
+    opacity: 1
+  #{ (($cfPresenTime + $cfFadingTime) / $cfTotalTime ) * 100}%
+    opacity: 1
+  #{ (($cfPresenTime + 2*$cfFadingTime) / $cfTotalTime ) * 100}%
+    opacity: 0
+  100%
+    opacity: 0
+
+
+#crossFadingGallery .image
+  position: absolute
+  left: 0
+  width: 100%
+  height: 100%
+  +animation-name(cfFadeInOut)
+  +animation-timing-function(linear)
+  +animation-iteration-count(infinite)
+  +animation-duration(#{$cfTotalTime}s)
+  +animation-fill-mode(forwards)
+  /* +animation-direction(alternate)
+  +background-size(cover)
+  box-sizing: border-box
+  background-color: #f00
+
+@for $i from 1 through $cfNumber
+  #crossFadingGallery .image:nth-of-type(#{$i})
+    opacity: 0
+    background: url(../images/30image#{$i}.jpg) no-repeat center center fixed
+    +background-size(cover)
+    +animation-delay(#{0.3 + $cfPresenTime * ($i - 1)}s)
+
