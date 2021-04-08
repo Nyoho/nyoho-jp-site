@@ -7,7 +7,7 @@ const Home = () =>
         </div>
         <header>
             <h1>
-                <img alt='Nyoho' />
+                <img alt='Nyoho' src="../static/Nyoho-logo.svg" />
             </h1>
         </header>
         <div id='main-content' role='main'>
