@@ -139,7 +139,8 @@ const Home = () =>
                             <li>Arrangement</li>
                         </ul>
                     </li>
-                    <li>Programming Languages<ol>
+                  <li>Programming Languages
+                    <ol>
                         <li>Objective-C</li>
                         <li>Swift</li>
                         <li>Ruby</li>
@@ -158,18 +159,18 @@ const Home = () =>
                         </li>
                     </ul>
                     </li>
-                    <li><p>Natural Languages</p>
+                    <li>Natural Languages
                         <ul>
                             <li>Dialects, especially the Hiroshima dialect</li>
                             <li>English</li>
                         </ul>
                     </li>
-                    <li><p>Morphisms</p>
+                    <li>Morphisms
                         <ul>
                             <li>Frobenius</li>
                         </ul>
                     </li>
-                    <li><p>Belongs to</p>
+                    <li>Belongs to
                         <ul>
                             <li><a href="https://nshiroshima.github.io">Cocoa Study Hiroshima</a></li>
                             <li><a href="https://hiroshimarb.github.io">Hiroshima.rb</a></li>
@@ -182,7 +183,8 @@ const Home = () =>
                         </ul>
                     </li>
                 </ul>
-            </section>
+            </div>
+          </section>
         </div>
     </div>
 
