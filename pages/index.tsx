@@ -13,122 +13,124 @@ const Home = () =>
         <div id='main-content' role='main'>
             <section id='links'>
                 <div className='container'>
-                    <h2>Links</h2>
-                    <ul>
-                        <li>
-                            <a href='https://nyoho.jp/wiki/?%E5%BA%83%E5%B3%B6%E5%BC%81%E5%90%B9%E3%81%8D%E6%9B%BF%E3%81%88%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA'>
-                                <i className='fa fa-microphone'></i>
-                                <div className='linktext'>広島弁吹き替え</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://washipo.nyoho.jp'>
-                                <i className='fa fa-microphone'></i>
-                                <div className='linktext'>My Podcast</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://marupokesearch.nyoho.jp'>
-                                <i className='fa fa-map-marker'></i>
-                                <div className='linktext'>Pokémon Tool</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://twitter.com/NeXTSTEP2OSX'>
-                                <i className='fa fa-twitter'></i>
-                                <div className='linktext'>Twitter</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://www.facebook.com/Nyoho'>
-                                <i className='fa fa-facebook'></i>
-                                <div className='linktext'>facebook</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://github.com/Nyoho'>
-                                <i className='fa fa-github'></i>
-                                <div className='linktext'>GitHub</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://www.youtube.com/user/NyohoVideo/'>
-                                <i className='fa fa-video-camera'></i>
-                                <div className='linktext'>YouTube</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='http://www.flickr.com/photos/nyoho'>
-                                <i className='fa fa-camera-retro'></i>
-                                <div className='linktext'>flickr</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://ja.foursquare.com/nextstep2osx'>
-                                <i className='fa fa-plane'></i>
-                                <div className='linktext'>foursquare</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://annict.com/@Nyoho'>
-                                <i className='fa fa-check-square'></i>
-                                <div className='linktext'>Annict</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://atcoder.jp/users/Nyoho'>
-                                <i className='fa fa-check-square'></i>
-                                <div className='linktext'>AtCoder</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://nyoho.jp/diary/'>
-                                <i className='fa fa-pencil'></i>
-                                <div className='linktext'>Diary</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://nyoho.jp/wiki/'>
-                                <i className='fa fa-paste'></i>
-                                <div className='linktext'>Wiki</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='/30-years/'>
-                                <i className='fa fa-clock-o'></i>
-                                <div className='linktext'>30 Years</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://www.amazon.co.jp/registry/wishlist/2G8J2UATV9SV6/'>
-                                <i className='fa fa-folder-open'></i>
-                                <div className='linktext'>Wish list</div>
-                            </a>
-                        </li>
+                  <h2>Links</h2>
+                  <p>
+                    <ul style={{display: 'grid', gap: '32px 10px', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))'}}>
+                      <li>
+                        <a href='https://nyoho.jp/wiki/?%E5%BA%83%E5%B3%B6%E5%BC%81%E5%90%B9%E3%81%8D%E6%9B%BF%E3%81%88%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA'>
+                          <FontAwesomeIcon icon="microphone" size='5x'/>
+                          <div className='linktext'>広島弁吹き替え</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://washipo.nyoho.jp'>
+                          <FontAwesomeIcon icon="microphone" size='5x'/>
+                          <div className='linktext'>My Podcast</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://marupokesearch.nyoho.jp'>
+                          <FontAwesomeIcon icon="map-marker-alt" size='5x'/>
+                          <div className='linktext'>Pokémon Tool</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://twitter.com/NeXTSTEP2OSX'>
+                          <FontAwesomeIcon icon={['fab', 'twitter']} size='5x'/>
+                          <div className='linktext'>Twitter</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='http://www.facebook.com/Nyoho'>
+                          <FontAwesomeIcon icon={['fab', 'facebook']} size='5x'/>
+                          <div className='linktext'>facebook</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://github.com/Nyoho'>
+                          <FontAwesomeIcon icon={['fab', 'github']} size='5x'/>
+                          <div className='linktext'>GitHub</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='http://www.youtube.com/user/NyohoVideo/'>
+                          <FontAwesomeIcon icon={['fab', 'youtube']} size='5x'/>
+                          <div className='linktext'>YouTube</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='http://www.flickr.com/photos/nyoho'>
+                          <FontAwesomeIcon icon={['fab', 'flickr']} size='5x'/>
+                          <div className='linktext'>flickr</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://ja.foursquare.com/nextstep2osx'>
+                          <FontAwesomeIcon icon={['fab', 'foursquare']} size='5x'/>
+                          <div className='linktext'>foursquare</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://annict.com/@Nyoho'>
+                          <FontAwesomeIcon icon='tv' size='5x'/>
+                          <div className='linktext'>Annict</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://atcoder.jp/users/Nyoho'>
+                          <FontAwesomeIcon icon='code' size='5x'/>
+                          <div className='linktext'>AtCoder</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://nyoho.jp/diary/'>
+                          <FontAwesomeIcon icon='pencil-alt' size='5x'/>
+                          <div className='linktext'>Diary</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://nyoho.jp/wiki/'>
+                          <FontAwesomeIcon icon='book-open' size='5x'/>
+                          <div className='linktext'>Wiki</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='/30-years/'>
+                          <FontAwesomeIcon icon={['far', 'clock']} size='5x'/>
+                          <div className='linktext'>30 Years</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href='https://www.amazon.co.jp/registry/wishlist/2G8J2UATV9SV6/'>
+                          <FontAwesomeIcon icon={['far', 'folder-open']} size='5x'/>
+                          <div className='linktext'>Wish list</div>
+                        </a>
+                      </li>
                     </ul>
+                  </p>
                 </div>
             </section>
-            <section id='favorites'>
-                <div className='container'></div>
+          <section id='favorites'>
+            <div className='container'>
                 <h2 id="favorites">Favorites</h2>
                 <ul>
-                    <li><p>OS</p>
+                    <li>OS
                         <ol>
                             <li>NEXTSTEP, macOS, iOS</li>
                             <li>Linux</li>
                         </ol>
                     </li>
-                    <li><p>Frameworks</p>
+                    <li>Frameworks
                         <ol>
                             <li>App Kit, Cocoa</li>
                         </ol>
                     </li>
-                    <li><p>Editor/Environment</p>
+                    <li>Editor/Environment
                         <ol>
                             <li>Emacs</li>
                         </ol>
                     </li>
-                    <li><p>Music</p>
+                    <li>Music
                         <ul>
                             <li>Trumpet</li>
                             <li>Wind band</li>
