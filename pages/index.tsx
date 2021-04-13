@@ -61,7 +61,7 @@ const Home = () =>
                       </li>
                       <li>
                         <a href='http://www.flickr.com/photos/nyoho'>
-                          <FontAwesomeIcon icon={['fab', 'flickr']} className='icon'/>
+                          <FontAwesomeIcon icon='camera-retro' className='icon'/>
                           <div className='linktext'>flickr</div>
                         </a>
                       </li>
