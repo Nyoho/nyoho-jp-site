@@ -1,8 +1,12 @@
 import React from 'react'
+import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Home = () =>
     <div>
+        <Head>
+          <title>Nyoho.jp</title>
+        </Head>
         <div className='gloss-container'>
             <div className='gloss'></div>
         </div>
