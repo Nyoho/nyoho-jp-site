@@ -8,11 +8,8 @@ import { faTwitter, faFacebook, faGithub, faYoutube, faFoursquare } from '@forta
 
 library.add(faMicrophone, faMapMarkerAlt, faTwitter, faFacebook, faGithub, faYoutube, faFoursquare, faTv, faCode, faPencilAlt, faBookOpen, faClock, faFolderOpen, faCameraRetro)
 
-class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
-  }
+const  MyApp = ({ Component, pageProps }) => {
+  return <Component {...pageProps} />
 }
 
 export default MyApp
