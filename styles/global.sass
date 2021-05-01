@@ -291,7 +291,7 @@ $cfTotalTime: $cfPresenTime * $cfNumber
 @for $i from 1 through $cfNumber
   #crossFadingGallery .image:nth-of-type(#{$i})
     opacity: 0
-    background: url(../public/static/30image#{$i}.jpg) no-repeat center center fixed
+    background: url(/static/30image#{$i}.jpg) no-repeat center center fixed
     background-size: cover
     animation-delay: #{0.3 + $cfPresenTime * ($i - 1)}s
 
