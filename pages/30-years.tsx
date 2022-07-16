@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
+import styles from './30-years.module.sass'
 
 const ThirtyYears = () =>
-      <div>
+      <div className={styles.onePage}>
         <title>Thirty Years of Nyoho</title>
         <div id='crossFadingGallery'>
           <div className='image' />
