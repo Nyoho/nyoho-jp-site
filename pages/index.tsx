@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import SocialLinks from '../components/SocialLinks'
+import Header from './header'
 
 const Home = () =>
     <div>
@@ -10,11 +11,7 @@ const Home = () =>
         <div className='gloss-container'>
             <div className='gloss'></div>
         </div>
-        <header>
-            <h1>
-                <img alt='Nyoho' src="../static/Nyoho-logo.svg" />
-            </h1>
-        </header>
+        <Header />
       <div id='main-content' role='main'>
           <SocialLinks />
           <section id='favorites'>
