@@ -2,15 +2,14 @@ import React from 'react'
 import Head from 'next/head'
 import SocialLinks from '../components/SocialLinks'
 import Header from './header'
+import Gloss from './gloss'
 
 const Home = () =>
     <div>
         <Head>
           <title>Nyoho.jp</title>
         </Head>
-        <div className='gloss-container'>
-            <div className='gloss'></div>
-        </div>
+        <Gloss/>
         <Header />
       <div id='main-content' role='main'>
           <SocialLinks />
