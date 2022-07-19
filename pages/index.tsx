@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import SocialLinks from '../components/SocialLinks'
-import Header from './header'
-import Gloss from './gloss'
+import Header from '../components/header'
+import Gloss from '../components/gloss'
 
 const Home = () =>
     <div>
