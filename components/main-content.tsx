@@ -71,7 +71,7 @@ const MainContent = () =>
                             <li><a href="https://hirusthima.github.io">hirusthima</a></li>
                             <li><a href="https://elixiroshima.github.io">Elixiroshima</a></li>
                             <li>Hiroshima Git Study Group</li>
-                            <li><a href="http://kamosui.net">賀茂吹奏楽団 (Kamo Wind Band)</a></li>
+                            <li><a href="https://kamosui.net">賀茂吹奏楽団 (Kamo Wind Band)</a></li>
                         </ul>
                     </li>
                 </ul>
