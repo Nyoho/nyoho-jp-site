@@ -67,7 +67,7 @@ const MainContent = () =>
                             <li><a href="https://nshiroshima.github.io">Cocoa Study Hiroshima</a></li>
                             <li><a href="https://hiroshimarb.github.io">Hiroshima.rb</a></li>
                             <li>Hiroshima.el</li>
-                            <li><a href="http://hi-lambda-oshima.github.io">Hiλoshima</a></li>
+                            <li><a href="https://hi-lambda-oshima.github.io">Hiλoshima</a></li>
                             <li><a href="https://hirusthima.github.io">hirusthima</a></li>
                             <li><a href="https://elixiroshima.github.io">Elixiroshima</a></li>
                             <li>Hiroshima Git Study Group</li>
