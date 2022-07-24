@@ -43,7 +43,7 @@ const MainContent = () =>
                     <li>Keyboards<ul>
                         <li>Happy Hacking Keyboard</li>
                         <li>Assignment<ul>
-                            <li><a href="http://www.itmedia.co.jp/enterprise/articles/0704/24/news006.html">Masui special (assigning &#39;;&#39; key to RET)</a></li>
+                            <li><a href="https://www.itmedia.co.jp/enterprise/articles/0704/24/news006.html">Masui special (assigning &#39;;&#39; key to RET)</a></li>
                             <li>The control key is in front of &#39;,&#39; key.</li>
                             <li>The right side of A key is &#39;;&#39;.</li>
                             <li>The right side of Z key is delete.</li>
