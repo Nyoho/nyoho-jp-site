@@ -1,0 +1,39 @@
+- OS
+  1.  NEXTSTEP, macOS, iOS
+  2.  Linux
+- Frameworks
+  1.  App Kit, Cocoa
+- Editor/Environment
+  1.  Emacs
+- Music
+  - Trumpet
+  - Wind band
+  - Composition
+  - Arrangement
+- Programming Languages
+  1. Objective-C
+  2. Swift
+  3. Ruby
+  4. Haskell
+  5. BASIC
+- Keyboards
+  - Happy Hacking Keyboard
+  - Assignment
+    - [[https://www.itmedia.co.jp/enterprise/articles/0704/24/news006.html][Masui special (assigning ';' key to RET)]]
+    - The control key is in front of ',' key.
+    - The right side of A key is ';'.
+    - The right side of Z key is delete.
+- Natural Languages
+  - Dialects, especially the Hiroshima dialect
+  - English
+- Morphisms
+  - Frobenius
+- Belongs to
+  - [[https://nshiroshima.github.io][Cocoa Study Hiroshima]]
+  - [[https://hiroshimarb.github.io][Hiroshima.rb]]
+  - Hiroshima.el
+  - [[https://hi-lambda-oshima.github.io][Hiλoshima]]
+  - [[https://hirusthima.github.io][hirusthima]]
+  - [[https://elixiroshima.github.io][Elixiroshima]]
+  - Hiroshima Git Study Group
+  - [[https://kamosui.net][賀茂吹奏楽団 (Kamo Wind Band)]]
