@@ -1,5 +1,5 @@
 import React from 'react'
-import App, { Container } from 'next/app'
+import { AppProps } from 'next/app'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
@@ -11,7 +11,7 @@ import { faTwitter, faFacebook, faGithub, faYoutube, faFoursquare } from '@forta
 
 library.add(faMicrophone, faMapMarkerAlt, faTwitter, faFacebook, faGithub, faYoutube, faFoursquare, faTv, faCode, faPencilAlt, faBookOpen, faClock, faFolderOpen, faCameraRetro)
 
-const  MyApp = ({ Component, pageProps }) => {
+const  MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url) => {
