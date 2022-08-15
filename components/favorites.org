@@ -1,10 +1,10 @@
 - OS
-  1.  NEXTSTEP, macOS, iOS
-  2.  Linux
+  1. NEXTSTEP, macOS, iOS
+  2. Linux
 - Frameworks
-  1.  App Kit, Cocoa
+  1. App Kit, Cocoa
 - Editor/Environment
-  1.  Emacs
+  1. Emacs
 - Music
   - Trumpet
   - Wind band
@@ -15,7 +15,9 @@
   2. Swift
   3. Ruby
   4. Haskell
-  5. BASIC
+  5. Julia
+  6. Emacs Lisp
+  7. BASIC
 - Keyboards
   - Happy Hacking Keyboard
   - Assignment
