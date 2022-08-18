@@ -11,13 +11,13 @@
   - Composition
   - Arrangement
 - Programming Languages
-  1. Objective-C
-  2. Swift
-  3. Ruby
-  4. Haskell
-  5. Julia
-  6. Emacs Lisp
-  7. BASIC
+  - Objective-C
+  - Swift
+  - Ruby
+  - Haskell
+  - Julia
+  - Emacs Lisp
+  - BASIC
 - Keyboards
   - Happy Hacking Keyboard
   - Assignment
