@@ -16,6 +16,7 @@
   - Ruby
   - Haskell
   - Julia
+  - Rust
   - Emacs Lisp
   - BASIC
 - Keyboards
