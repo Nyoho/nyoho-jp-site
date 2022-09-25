@@ -32,6 +32,6 @@
     "@zeit/next-css": "1.0.1",
     "@zeit/next-sass": "1.0.1",
     "normalize.css": "8.0.1",
-    "typescript": "4.2.4"
+    "typescript": "4.8.3"
   }
 }
