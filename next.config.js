@@ -2,7 +2,6 @@ const path = require('path')
 
 module.exports = {
   distDir: 'build_dir',
-  assetPrefix: './',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
