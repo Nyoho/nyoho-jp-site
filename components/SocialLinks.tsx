@@ -1,7 +1,10 @@
 import styles from './SocialLinks.module.sass'
 import { FaClock, FaFolderOpen,
-         FaMicrophone, FaMapMarkerAlt, FaTv, FaCode, FaPencilAlt, FaBookOpen, FaCameraRetro,
-         FaTwitter, FaFacebook, FaGithub, FaYoutube, FaFoursquare } from 'react-icons/fa'
+  FaMicrophone, FaMapMarkerAlt, FaTv, FaCode, FaPencilAlt, FaBookOpen, FaCameraRetro,
+  FaTwitter, FaFacebook, FaGithub, FaYoutube, FaFoursquare,
+  FaPaste
+} from 'react-icons/fa'
+import { ImSigma } from 'react-icons/im'
 
 const SocialLinks = () => {
   return <section id='links' className={styles.links}>
@@ -72,6 +75,30 @@ const SocialLinks = () => {
                  <a href='https://atcoder.jp/users/Nyoho'>
                    <FaCode className={styles.icon}/>
                    <div className='linktext'>AtCoder</div>
+                 </a>
+               </li>
+               <li>
+                 <a href='https://mathtod.online/@Nyoho'>
+                   <ImSigma className={styles.icon}/>
+                   <div className='linktext'>Mathtodon</div>
+                 </a>
+               </li>
+               <li>
+                 <a href='https://snort.social/p/npub10j8hmqaxy2usldhkphpx75kequmqdg7m7ya7vmw7p0vv2tfvsegs9k0cg4'>
+                   <FaPaste className={styles.icon}/>
+                   <div className='linktext'>Nostr</div>
+                 </a>
+               </li>
+               <li>
+                 <a href='https://bsky.app/profile/nyoho.bsky.social'>
+                   <FaPaste className={styles.icon}/>
+                   <div className='linktext'>Bluesky</div>
+                 </a>
+               </li>
+               <li>
+                 <a href='https://www.threads.net/@nyoho'>
+                   <FaPaste className={styles.icon}/>
+                   <div className='linktext'>Threads</div>
                  </a>
                </li>
                <li>
