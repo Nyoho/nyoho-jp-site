@@ -39,4 +39,4 @@
   - [[https://hirusthima.github.io][hirusthima]]
   - [[https://elixiroshima.github.io][Elixiroshima]]
   - Hiroshima Git Study Group
-  - [[https://kamosui.net][賀茂吹奏楽団 (Kamo Wind Band)]]
+  - [[https://www.kamosui.net][賀茂吹奏楽団 (Kamo Wind Band)]]
