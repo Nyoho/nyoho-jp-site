@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Gloss from '../components/gloss'
 import MainContent from '../components/main-content'
 import { getData } from '../lib/api'
+import { join } from 'path'
 
 const Home = ({ content }) =>
     <div>
@@ -18,7 +19,8 @@ const Home = ({ content }) =>
 export default Home
 
 export const getStaticProps = async () => {
-  const content = await getData()
+  const directory = join(process.cwd(), 'components')
+  const content = await getData(join(directory, `favorites.org`))
 
   return {
     props: { content }
