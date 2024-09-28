@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import reorg from '@orgajs/reorg'
+import { reorg } from '@orgajs/reorg'
 import mutate from '@orgajs/reorg-rehype'
 import html from 'rehype-stringify'
 import { unified } from 'unified'
