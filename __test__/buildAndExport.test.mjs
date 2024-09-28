@@ -1,6 +1,6 @@
-const { exec } = require('child_process');
-const util = require('util');
-const execPromise = util.promisify(exec);
+import { exec } from 'child_process';
+import { promisify } from 'util';
+const execPromise = promisify(exec);
 
 jest.setTimeout(20000);
 
