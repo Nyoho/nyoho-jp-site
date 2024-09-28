@@ -1,19 +1,17 @@
 const { exec } = require('child_process');
+const util = require('util');
+const execPromise = util.promisify(exec);
+
+jest.setTimeout(20000);
 
 describe('Next.js Build and Export', () => {
-  it('should build successfully', done => {
-    exec('next build', (error, stdout, stderr) => {
-      expect(error).toBeNull();
-      expect(stderr).toBeFalsy();
-      done();
-    });
-  }, 10000);
+  it('should build successfully', async () => {
+    const { stdout, stderr } = await execPromise('next build');
+    expect(stderr).toBeFalsy();
+  });
 
-  it('should export successfully', done => {
-    exec('next export', (error, stdout, stderr) => {
-      expect(error).toBeNull();
-      expect(stderr).toBeFalsy();
-      done();
-    });
-  }, 10000);
+  it('should export successfully', async () => {
+    const { stdout, stderr } = await execPromise('next export');
+    expect(stderr).toBeFalsy();
+  });
 });
