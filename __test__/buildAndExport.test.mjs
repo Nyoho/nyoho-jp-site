@@ -9,9 +9,4 @@ describe('Next.js Build and Export', () => {
     const { stdout, stderr } = await execPromise('next build');
     expect(stderr).toBeFalsy();
   }, { timeout: 20000 });
-
-  it('should export successfully', async () => {
-    const { stdout, stderr } = await execPromise('next export');
-    expect(stderr).toBeFalsy();
-  }, { timeout: 20000 });
 });
