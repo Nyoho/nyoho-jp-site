@@ -40,3 +40,4 @@
   - [[https://elixiroshima.github.io][Elixiroshima]]
   - Hiroshima Git Study Group
   - [[https://www.kamosui.net][賀茂吹奏楽団 (Kamo Wind Band)]]
+  - こんなあ保存協会 (理事長)
